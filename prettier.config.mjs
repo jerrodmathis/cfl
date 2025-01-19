@@ -1,0 +1,15 @@
+const config = {
+  arrowParens: "always",
+  bracketSameLine: false,
+  bracketSpacing: true,
+  experimentalTernaries: true,
+  jsxSingleQuote: true,
+  printWidth: 80,
+  quoteProps: "as-needed",
+  semi: true,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: "all",
+};
+
+export default config;
