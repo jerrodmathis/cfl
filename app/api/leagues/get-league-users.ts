@@ -1,6 +1,7 @@
-import axios from "axios";
-import { useQuery, skipToken } from "@tanstack/react-query";
-import { SleeperLeagueUser } from "./types";
+import type { SleeperLeagueUser } from './types';
+
+import { skipToken, useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 
 function fetchLeagueUsers(leagueId: string): Promise<SleeperLeagueUser> {
   return axios
@@ -10,7 +11,7 @@ function fetchLeagueUsers(leagueId: string): Promise<SleeperLeagueUser> {
 
 export function useLeagueUsers(leagueId: string) {
   return useQuery({
-    queryKey: ["league-users", leagueId],
+    queryKey: ['league-users', leagueId],
     queryFn: leagueId ? () => fetchLeagueUsers(leagueId) : skipToken,
   });
 }
