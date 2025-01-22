@@ -3,8 +3,8 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   /* config options here */
   env: {
-    SLEEPER_API_URL: process.env.SLEEPER_API_URL,
-    SLEEPER_LEAGUE_ID: process.env.SLEEPER_LEAGUE_ID,
+    NEXT_PUBLIC_SLEEPER_API_URL: process.env.SLEEPER_API_URL,
+    NEXT_PUBLIC_SLEEPER_LEAGUE_ID: process.env.SLEEPER_LEAGUE_ID,
   },
 };
 

@@ -5,7 +5,9 @@ import axios from 'axios';
 
 function fetchLeagueRosters(leagueId: string): Promise<SleeperLeagueRoster> {
   return axios
-    .get(`${process.env.SLEEPER_API_URL}/league/${leagueId}/rosters`)
+    .get(
+      `${process.env.NEXT_PUBLIC_SLEEPER_API_URL}/league/${leagueId}/rosters`,
+    )
     .then((res) => res.data);
 }
 

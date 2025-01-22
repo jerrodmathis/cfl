@@ -5,7 +5,7 @@ import axios from 'axios';
 
 function fetchUser(userId: string): Promise<SleeperUser> {
   return axios
-    .get(`${process.env.SLEEPER_API_URL}/user/${userId}`)
+    .get(`${process.env.NEXT_PUBLIC_SLEEPER_API_URL}/user/${userId}`)
     .then((res) => res.data);
 }
 
