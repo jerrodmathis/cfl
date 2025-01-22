@@ -1,6 +1,7 @@
-import axios from "axios";
-import { skipToken, useQuery } from "@tanstack/react-query";
-import { SleeperLeagueRoster } from "./types";
+import type { SleeperLeagueRoster } from './types';
+
+import { skipToken, useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 
 function fetchLeagueRosters(leagueId: string): Promise<SleeperLeagueRoster> {
   return axios
@@ -10,7 +11,7 @@ function fetchLeagueRosters(leagueId: string): Promise<SleeperLeagueRoster> {
 
 export function useLeagueRosters(leagueId: string) {
   return useQuery({
-    queryKey: ["league-rosters", leagueId],
+    queryKey: ['league-rosters', leagueId],
     queryFn: leagueId ? () => fetchLeagueRosters(leagueId) : skipToken,
   });
 }

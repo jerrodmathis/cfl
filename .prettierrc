@@ -1,0 +1,29 @@
+{
+  "arrowParens": "always",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "experimentalTernaries": true,
+  "jsxSingleQuote": true,
+  "printWidth": 80,
+  "quoteProps": "as-needed",
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "<TYPES>^(node:)",
+    "<TYPES>",
+    "<TYPES>^[.]",
+    "",
+    "<BUILTIN_MODULES>",
+    "",
+    "^react$",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^[.]"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "importOrderCaseSensitive": false,
+  "importOrderTypeScriptVersion": "5.0.0"
+}

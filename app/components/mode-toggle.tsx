@@ -1,6 +1,7 @@
-"use client";
-import { Option, Select, useColorScheme } from "@mui/joy";
-import React from "react";
+'use client';
+
+import React from 'react';
+import { Option, Select, useColorScheme } from '@mui/joy';
 
 export function ModeToggle() {
   const { mode, setMode } = useColorScheme();
@@ -17,8 +18,8 @@ export function ModeToggle() {
       value={mode}
       onChange={(event, newMode) => setMode(newMode)}
       sx={{
-        position: "absolute",
-        width: "max-content",
+        position: 'absolute',
+        width: 'max-content',
         top: 0,
         right: 0,
         mr: 2,
@@ -26,9 +27,9 @@ export function ModeToggle() {
         zIndex: 999,
       }}
     >
-      <Option value="system">System</Option>
-      <Option value="light">Light</Option>
-      <Option value="dark">Dark</Option>
+      <Option value='system'>System</Option>
+      <Option value='light'>Light</Option>
+      <Option value='dark'>Dark</Option>
     </Select>
   );
 }

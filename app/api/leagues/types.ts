@@ -1,4 +1,4 @@
-import { SleeperUser } from "../user";
+import { SleeperUser } from '../user';
 
 export type SleeperLeague = {
   name: string;
@@ -150,10 +150,10 @@ export type SleeperLeagueUser = SleeperUser & {
 };
 
 export type RosterPosition =
-  | "QB"
-  | "RB"
-  | "WR"
-  | "TE"
-  | "FLEX"
-  | "SUPER_FLEX"
-  | "BN";
+  | 'QB'
+  | 'RB'
+  | 'WR'
+  | 'TE'
+  | 'FLEX'
+  | 'SUPER_FLEX'
+  | 'BN';
